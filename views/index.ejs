@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Of President</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+<a href="/reddit">See Reddit First Page Scrapping example</a>
+
+    <ul>
+        <h1> List of American Presidents </h1>
+        <div id="presidents">
+            <% data.presidents.forEach((val, index ) => { %>
+                <li><a href= <%= val %> > <%= data.names[index]  %> </a></li>
+            <% }) %>
+        </div>
+    </ul>
+</body>
+</html>

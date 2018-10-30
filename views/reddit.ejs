@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Of President</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+<a href="/">See American Presidents Scrapping example</a>
+<ul>
+    <h1> Reddit Front Page Posts </h1>
+    <div>
+        <% data.posts.forEach((val, index ) => { %>
+            <li><a href=<%= data.links[index] %> > <%= data.posts[index]  %> </a></li>
+        <% }) %>
+    </div>
+</ul>
+</body>
+</html>
